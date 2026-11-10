@@ -1,0 +1,6 @@
+opencv-python
+numpy
+pystray
+pillow
+pytest
+pyinstaller

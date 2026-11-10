@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+data/
+*.part
+*.tmp
+# Model ONNX (~75 MB) tải bằng: python tools/download_models.py
+models/*.onnx

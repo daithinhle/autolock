@@ -1,0 +1,36 @@
+AutoLock - tự khóa máy khi bạn rời khỏi webcam
+==============================================
+
+Yêu cầu: Windows 10/11 64-bit, có webcam. Không cần cài Python hay quyền admin.
+
+CÀI ĐẶT
+1. Giải nén vào một thư mục bạn có quyền ghi, ví dụ:
+      C:\Users\<tên bạn>\AutoLock
+   Không đặt trong "C:\Program Files" (app cần ghi vào thư mục data bên cạnh).
+   Không đặt trong OneDrive/Dropbox/Google Drive, ổ mạng hay ổ USB: khi đó app
+   không dùng thư mục data bên cạnh (để ảnh không bị đồng bộ ra ngoài máy).
+2. Chạy AutoLock.exe.
+   Nếu Windows hiện "Windows protected your PC" (vì app chưa được ký số):
+   bấm "More info" -> "Run anyway".
+3. Cửa sổ "Đăng ký khuôn mặt chủ máy" hiện ra: bấm "Bắt đầu quét" và làm theo
+   6 bước. App chỉ lưu đặc trưng số của khuôn mặt, không lưu ảnh của bạn.
+4. App chạy ẩn ở khay hệ thống (góc phải taskbar, có thể nằm trong mũi tên ^)
+   và tự chạy lại mỗi khi đăng nhập Windows.
+
+SỬ DỤNG
+- Rời khỏi máy khoảng 12 giây -> máy tự khóa.
+- Nhấp chuột phải vào icon camera ở khay hệ thống: tạm dừng, chế độ camera,
+  tự khóa khi không thao tác, ảnh người lạ, đăng ký lại khuôn mặt, cài đặt.
+- Máy có nhiều camera (ví dụ camera hồng ngoại Windows Hello) mà app không thấy
+  mặt bạn: vào Cài đặt -> "Camera số", thử 1, 2...
+
+DỮ LIỆU
+Toàn bộ nằm trong thư mục "data" cạnh AutoLock.exe: cấu hình, khuôn mặt chủ máy,
+log 24 giờ gần nhất, ảnh người lạ (giữ 7 ngày). App chạy hoàn toàn offline
+(chặn mọi kết nối mạng), ảnh chỉ lưu trên ổ cứng của máy này.
+Copy cả thư mục sang máy khác = mang theo cấu hình. Nếu là người khác dùng,
+hãy "Đăng ký lại khuôn mặt" trên máy đó.
+
+GỠ BỎ
+1. Chuột phải icon khay hệ thống -> bỏ chọn "Chạy cùng Windows" -> "Thoát".
+2. Xóa thư mục AutoLock.
